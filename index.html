@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>705bet-j&a</title>
+</head>
+<body>
+    <div class="container">
+
+        <h1>
+            Existem <span class="destaque">Horários</span> onde o jogo está pagando
+            <span class="destaque">loucamente</span>.<br>
+
+            Com a gente você ficará por dentro
+            <span class="destaque">deles</span>.
+        </h1>
+
+        <h1>
+            Entre no grupo gratuito e receba estratégias diárias e os
+            <span class="destaque">
+                minutos mais pagantes
+            </span>
+            do nosso novo jogo.
+        </h1>
+
+        <button>
+            <a href="https://t.me/+AyfBW_GPl_RmY2Ex">Quero lucrar com o novo jogo</a>
+        </button>
+
+        <h2>*Apenas 50 vagas gratuitas*</h2>
+
+        <!-- BARRA DE PROGRESSO NO LUGAR CORRETO (DENTRO DO CONTAINER) -->
+        <div class="progress-wrapper">
+            <div class="progress-label">Total de vagas</div>
+            
+            <div class="progress-container">
+                <!-- A largura (width) controla o progresso -->
+                <div class="progress-bar" style="width: 80%;" id="myProgressBar">
+                    <!-- O bonequinho fica fixado no canto direito da barra de progresso -->
+                    <div class="runner"></div>
+                    <span class="progress-text">80%</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Script opcional para controle dinâmico -->
+    <script>
+        function setProgress(percent) {
+            const bar = document.getElementById('myProgressBar');
+            const text = bar.querySelector('.progress-text');
+            const value = Math.min(Math.max(percent, 0), 100);
+            
+            bar.style.width = value + '%';
+            text.textContent = value + '%';
+        }
+    </script>
+</body>
+</html>

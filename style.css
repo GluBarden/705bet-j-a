@@ -1,0 +1,153 @@
+
+body{
+
+     background-image: url("img/imgGBT.png");
+    background-repeat: no-repeat; /* Não repete a imagem */
+    background-size: cover;       /* Faz a imagem cobrir toda a tela */
+    background-position: center;  /* Centraliza a imagem */
+   
+
+    margin: 0;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background: rgba(0,0,0,.45);
+}
+
+h1{
+    color: white;
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+h2{
+    color: white;
+    margin-top: 30px;
+}
+
+.destaque{
+    background: #FFD900;
+    color: black;
+    padding: 3px 8px;
+    border-radius: 4px;
+}
+
+button{
+    margin-top: 25px;
+    padding: 18px 35px;
+    border: none;
+    border-radius: 8px;
+    background: #2ECC40;
+    cursor: pointer;
+}
+
+button a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Container principal */
+        .progress-wrapper {
+            width: 100%;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            text-align: center;
+        }
+
+        /* Texto acima da barra */
+        .progress-label {
+            color: #ffffff;
+            font-size: 14px;
+            margin-bottom: 25px; /* Espaço para o bonequinho não cortar */
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Container da Barra (A trilha cinza/branca) */
+        .progress-container {
+            width: 100%;
+            height: 24px;
+            background-color: #e0e0e0;
+            border-radius: 12px;
+            position: relative; /* Permite posicionar o bonequinho em relação a ela */
+            box-shadow: inset 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        /* A Barra de Progresso (O preenchimento vermelho) */
+        .progress-bar {
+            height: 100%;
+            width: 80%; /* Altere essa porcentagem para definir o progresso */
+            background-color: #ff0000; /* Cor vermelha idêntica à imagem */
+            border-radius: 12px;
+            position: relative;
+            transition: width 0.5s ease-in-out;
+            
+            /* Centraliza o texto da porcentagem no final da barra */
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        /* Texto da porcentagem dentro da barra */
+        .progress-text {
+            color: #ffffff;
+            font-size: 11px;
+            font-weight: bold;
+            margin-right: 15px;
+        }
+
+        /* O Mascote/Bonequinho que corre por cima */
+        .runner {
+            position: absolute;
+            top: -28px; /* Ajuste essa altura para posicionar o bonequinho perfeitamente na linha */
+            right: -15px; /* Alinha o centro do bonequinho com o final do preenchimento */
+            width: 35px; /* Tamanho do bonequinho */
+            height: 35px;
+            background-image: url('https://i.imgur.com/KdfQ1w0.png'); /* Substitua pelo link da imagem do seu bonequinho */
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            
+            /* Pequena animação de pulo/corrida (Opcional) */
+            animation: run-bounce 0.6s infinite alternate ease-in-out;
+        }
+
+        /* Animação para dar vida ao personagem */
+        @keyframes run-bounce {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(-4px);
+            }
+        }
+
+        /* Fundo escuro igual ao seu site para contraste */
+      
+
+
